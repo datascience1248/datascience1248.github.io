@@ -38,14 +38,59 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+input[name="_gotcha"] {
+  display: none;  
+}
+input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  resize: vertical;
+  color: grey;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+input[type=submit] {
+  background-color: #ccc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #4CAF50;
+}
+.container {
+	width: 350px;
+	margin: auto;
+}
+fieldset {
+  border: 0px;
+}
 </style>
 <head>
   <title>Educator.support</title>
 </head>
 <body>
   <div>
-    <h2>Contact</h2>
-    <p>Supporting Educators worldwide<br>in providing effective and engaging digital learning.</p>
+    <h2>About</h2>
+    <p>Supporting <b>Educators</b> worldwide in providing<br>effective and engaging digital learning.</p>
+  </div>
+<div class="container">
+	<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/mlepjppw" method="post">
+	  <fieldset id="fs-frm-inputs">
+	    <input type="email" name="_replyto" id="email-address" placeholder="Your email address here." required="">
+	    <textarea rows="5" name="message" id="message" placeholder="How can I help?" required=""></textarea>
+	    <input type="hidden" name="_subject" id="email-subject" value="Educator.support - Contact Form submission">
+		<input type="hidden" name="_next" value="https://educator.support/thankyou.html" />
+		<input type="text" name="_gotcha" style="display:none" />
+	  </fieldset>
+	  <input type="submit" value="Send">
+	</form>
   </div>
   <div>
     <p class="b"><small>Photo by <a href="https://unsplash.com/@timchowstudio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tim Chow</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></small></p>
