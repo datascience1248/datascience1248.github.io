@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Create learning evaluations and dynamic reporting using Forms for Excel</title>
+	  <link rel="shortcut icon" type="image/jpg" href="./favicon.jpg"/>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <style>
+         body {
+         font: 20px Montserrat, sans-serif;
+         line-height: 1.8;
+         background-color: #F2F2F2;
+         }
+         .navbar {
+         padding-top: 15px;
+         padding-bottom: 15px;
+         border: 0;
+         border-radius: 0;
+         margin-bottom: 0;
+         font-size: 12px;
+         letter-spacing: 3px;
+         background-color: #F2F2F2;
+         }
+         .nav  li a {
+         padding-right: 0px;
+         padding-left: 30px;		
+         }
+         .navbar-nav  li a:hover {
+         color: #F9681B !important;
+         }	  
+         .text-block {
+         position: relative;
+         align-items: center;
+         background-color: #fff;
+         height: 100%;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: -17rem;
+         text-align: justify;
+         width: 85%;
+         color: #6C7995;
+         padding: 30px 50px 30px 50px;	  
+         }	
+         .article-date {
+         font-size: 1rem;
+         letter-spacing: .125rem;
+         text-transform: uppercase;
+		 padding-top: 20px;
+		 padding-bottom: 20px;
+         }
+         .article-title {
+         font-size: 2.0rem;
+         letter-spacing: -.0625rem;
+         color: #3A4150;
+         }
+         .article-paragraph {
+         font-size: 1.5rem;
+         letter-spacing: -.0625rem;
+         padding-bottom: 10px;
+         }	
+         .article-readmore {
+         font-size: 1.25rem;
+         letter-spacing: .125rem;
+         color: #F9681B;
+         }	
+         input[name="_gotcha"] {
+         display: none;  
+         }
+         input[type=email], textarea {
+         width: 100%;
+         padding: 12px;
+         border: 1px solid #6C7995;
+         border-radius: 4px;
+         box-sizing: border-box;
+         margin-top: 4px;
+         margin-bottom: 10px;
+         resize: vertical;
+         }
+         input[type=submit] {
+         background-color: #F2F2F2;
+         color: #F9681B;
+         padding: 12px 20px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+         }
+         input[type=submit]:hover {
+         background-color: #F9681B;
+         color: white;
+         }
+         .container1 {
+         width: auto;
+         margin: auto;
+         max-width: 500px;
+         font-size: 1.4rem;
+         letter-spacing: -.0625rem;
+         }
+         fieldset {
+         border: 0px;
+         }
+         p.b {
+         bottom: 0;
+         width:100%;
+         text-align: center;
+         font-size: 1.4rem;
+         letter-spacing: -.0625rem;
+         }
+      </style>
+	  
+	  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f077a6c1fc3670013bd2900&product=inline-share-buttons" async="async"></script>
+   </head>
+   <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-default">
+         <div class="container">
+            <div class="navbar-header">	
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>                   
+               </button>
+               <a class="navbar-brand" href="https://educator.support/">educator.support</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="https://educator.support/">home</a></li>
+                  <li><a href="https://educator.support/about.html">about</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- About section -->
+      <div class="container">
+         <img src="./create_learning_evaluations_and_dynamic_reporting_using_Forms_for_Excel.jpg" class="img-responsive" style="display:inline" alt="Create learning evaluations and dynamic reporting using Forms for Excel">
+         <div class="text-block">
+            <p class="article-date">july 16, 2020</p>
+            
+            <p class="article-title">Create learning evaluations and dynamic reporting using Forms for Excel</p>
+			<div class="sharethis-inline-share-buttons"></div>
+			<br>
+            <p class="article-paragraph">
+			<b style="color: #F9681B">A.</b> Introducing a brief overview of the Kirkpatrick Model<br>
+			<b style="color: #F9681B">B.</b> Setting up Forms for Excel in order to store the evaluation responses<br>
+			<b style="color: #F9681B">C.</b> Adding evaluation questions in Microsoft Forms<br>
+			<b style="color: #F9681B">D.</b> Creating a dynamic report to present the results<br>
+			</p>
+            <br>
+			<p class="article-paragraph">
+			<b style="color: #F9681B">A.</b><b> Introducing a brief overview of the Kirkpatrick Model</b>
+			<br>
+			One of the most popular models for analyzing and evaluating the results of programs (training or educational) is the Kirkpatrick Model.
+			</p>
+			<img src="./Kirkpatrick_Model_levels.jpg" class="img-responsive" style="display:inline" alt="Kirkpatrick Model levels">
+			<br><br>
+			<p class="article-paragraph">
+			Level 1 <b style="color: #F9681B">Reaction</b>: addresses how the participants react to the training session<br>
+			Level 2 <b style="color: #F9681B">Learning</b>: focuses on whether the attendees have understood the content<br>
+			Level 3 <b style="color: #F9681B">Behavior</b>: analyses the change in behavior. Are the participants utilizing what they have learned?<br>
+			Level 4 <b style="color: #F9681B">Results</b>: determines if the training had a positive impact on the organization/business<br>
+			<br>
+			The questions in the evaluation form correlate directly to these levels.
+			</p>
+			<br>
+			<p class="article-paragraph">
+			<b style="color: #F9681B">B.</b><b> Setting up Forms for Excel in order to store the evaluation responses</b>
+			<br>
+			Here is a reference to the Microsoft Tech Community article introducing <b><a style="color: #F9681B" href="https://techcommunity.microsoft.com/t5/microsoft-forms-blog/forms-for-excel-new-experience-for-excel-survey-in-office-365/ba-p/109195" target=_blank>Forms for Excel</a></b>.
+			</p>
+            <p class="article-paragraph">
+			The Excel contains each evaluation on one line. Imagine this as a repository, a database behind the evaluation form. Let's start by creating the Excel. Navigate to the location where the file should be created and click <b style="color: #F9681B">New</b> and <b style="color: #F9681B">Forms for Excel</b>.
+			</p>
+			<img src="./Forms_for_Excel.jpg" class="img-responsive" style="display:inline" alt="Forms for Excel">
+			<br><br>
+			<p class="article-paragraph">
+			Microsoft Forms automatically opens in a new tab.
+			</p>
+			<br>
+			<p class="article-paragraph">
+			<b style="color: #F9681B">C.</b><b> Adding evaluation questions in Microsoft Forms</b>
+			<br>
+			At this moment we can start to work on our evaluation form. There are a multitude of questions you can ask for each of the Kirkpatrick levels. The following are some of the (Rating) examples.<br>
+			<i>Subtitle - allows for adding extra information</i>.
+			</p>           
+			<p class="article-paragraph">
+			Level 1 - <b style="color: #F9681B">I found the session to be a good use of my time</b><br>
+			</p>
+			<img src="./Level1_Kirkpatrick_question.jpg" class="img-responsive" style="display:inline" alt="Level 1 Kirkpatrick question">
+			<br><br>
+			<p class="article-paragraph">
+			Level 2 - <b style="color: #F9681B">I was appropriately challenged by the material</b><br>
+			</p>
+			<img src="./Level2_Kirkpatrick_question.jpg" class="img-responsive" style="display:inline" alt="Level 2 Kirkpatrick question">
+			<br><br>
+			<p class="article-paragraph">
+			Level 3 - <b style="color: #F9681B">I will be able to apply what I have learned</b><br>
+			</p>
+			<img src="./Level3_Kirkpatrick_question.jpg" class="img-responsive" style="display:inline" alt="Level 3 Kirkpatrick question">
+			<br>
+			<p class="article-paragraph">For a more granular approach, consider the knowledge that the student should gain at the end of the session and, using a <b style="color: #F9681B">Likert</b> entry, evaluate each skill.</p>
+			<br>
+			<p class="article-paragraph">
+			Level 4 - <b style="color: #F9681B">This session will improve my performance and productivity</b><br>
+			</p>
+			<img src="./Level4_Kirkpatrick_question.jpg" class="img-responsive" style="display:inline" alt="Level 4 Kirkpatrick question">
+			<br><p class="article-paragraph">For a more granular understanding, using <b style="color: #F9681B">Multiple answers Choice</b>, ask the student to reflect on which specific areas, the session had an impact on.</p>
+			<br>
+			<p class="article-paragraph">
+			Net Promoter Score - <b style="color: #F9681B">I will recommend this session to others</b><br>
+			</p>
+			<img src="./net_promoter_score_question.jpg" class="img-responsive" style="display:inline" alt="Net Promoter Score question">
+			<br>
+			<br>	
+			<p class="article-paragraph">
+			Feedback - <b style="color: #F9681B">You can share below any additional comments or suggestions</b><br>
+			</p>
+			<img src="./feedback_question.jpg" class="img-responsive" style="display:inline" alt="Feedback question">
+			<br><br>			
+			<p class="article-paragraph">Use the <b style="color: #F9681B">Preview</b> button at the top of the form to submit a few responses.</p>
+			<br>
+			<p class="article-paragraph">
+			<b style="color: #F9681B">D.</b><b> Creating a dynamic report to present the results</b>
+			<br>
+			Let's navigate to the location where the Excel was created (a different tab) and <b style="color: #F9681B">Open in app</b>.<br>
+			<b style="color: #F9681B">Form1</b> contains a few entries. You can notice the columns represent, amongst others, the questions from the Form. Rename the existing sheet to <b style="color: #F9681B">Calculations</b> - it will be used to compute the averages across the responses.<br>
+			</p>
+			<img src="./evaluation_average_scores.jpg" class="img-responsive" style="display:inline" alt="Calculation of average scores for the Kirkpatrick levels">
+			<br><br>
+			<p class="article-paragraph">
+			How about the Net Promoter Score?<br><br>
+			<img src="./Net_Promoter_Score_calculations.jpg" class="img-responsive" style="display:inline" alt="Calculation of the Net Promoter Score">
+			<br><br>
+			</p>
+			
+			<p class="article-paragraph">
+			Next, let's visualize the results.<br>
+			Create a <b style="color: #F9681B">New sheet</b>, go to <b style="color: #F9681B">Page Layout</b> and set the size to A4. Click <b style="color: #F9681B">View</b> and select Page Layout.
+			Insert a Doughnut Chart for each 4 levels with a rectangle in the middle containing the corresponding value. For the Net Promoter Score use rectangles to build a dashboard.
+			</p>
+			<img src="./evaluation_report1.jpg" class="img-responsive" style="display:inline" alt="Evaluatio Report">
+			<br><br>
+			<p class="article-paragraph">That is it! Test the dynamic changes in the report by submitting new evaluations.</p>
+			<img src="./evaluation_report2.jpg" class="img-responsive" style="display:inline" alt="Evaluatio Report">
+			<br><br>
+			<p class="article-paragraph">You can now cleanup the responses, beautify the report and share the evaluation with your target audience.
+			<br><br>
+			<i>Have an Awesome training! :-)</i>
+			</p>
+         </div>
+      </div>
+      <br>
+      <div>
+         <p class="b"><small>Photo by <a style="color: #F9681B" href="https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isaac Smith</a> on <a style="color: #F9681B" href="https://unsplash.com/s/photos/graph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></small></p>
+      </div>
+	  
+
+
+   </body>
+</html>
